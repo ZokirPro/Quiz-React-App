@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+
+$option-background: hsl(0, 0%, 100%);
+$option-background-hover: hsl(0, 0%, 97%);
+$primary-color: hsl(171, 100%, 41%);
+
+body{
+  font-family: 'Comfortaa', cursive;
+  background-color: $primary-color;
+}
+.hero{
+  transform: translateY(100px);
+  width: 700px;
+  margin:auto;
+
+  .is-size-5{
+    font-size:25px;
+  }
+
+  .title{
+    color:white;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .subtitle1{
+    color:white;
+    text-align: center;
+  }
+  .subtitle2{
+    color:white;
+    text-align: center;
+    font-size:25px;
+    font-weight: bold;
+  }
+}
+.option{
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-bottom: .5rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  background: $option-background;
+  
+  &:hover{
+    background: $option-background-hover;
+    
+    span{
+      background: $primary-color;
+      color: white;
+    }
+  }
+}
+
+.option span{  
+  border-radius: 5px;
+  border: solid 1px $primary-color;
+  padding: .2rem .5rem 0;
+  width: 2.5rem;
+  margin-right: 1rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  color: $primary-color;
+}
+
+.navigation{
+  &:before, &:after{
+    content: ' - ';
+  }
+}

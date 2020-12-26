@@ -1,38 +1,81 @@
-.App {
+@import url("https://fonts.googleapis.com/css?family=Comfortaa&display=swap");
+body {
+  font-family: 'Comfortaa', cursive;
+  background-color: #00d1b2;
+}
+
+.hero {
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  width: 700px;
+  margin: auto;
+}
+
+.hero .is-size-5 {
+  font-size: 25px;
+}
+
+.hero .title {
+  color: white;
+  font-weight: bold;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero .subtitle1 {
+  color: white;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hero .subtitle2 {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.option {
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-bottom: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  background: white;
+}
+
+.option:hover {
+  background: #f7f7f7;
+}
+
+.option:hover span {
+  background: #00d1b2;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.option span {
+  border-radius: 5px;
+  border: solid 1px #00d1b2;
+  padding: .2rem .5rem 0;
+  width: 2.5rem;
+  margin-right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #00d1b2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navigation:before, .navigation:after {
+  content: ' - ';
 }
+/*# sourceMappingURL=App.css.map */
