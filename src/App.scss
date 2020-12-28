@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
 
 $option-background: hsl(0, 0%, 100%);
-$option-background-hover: hsl(0, 0%, 97%);
+$option-background-hover: hsl(0, 5%, 96%);
 $primary-color: hsl(171, 100%, 41%);
 
 body{
@@ -9,8 +9,8 @@ body{
   background-color: $primary-color;
 }
 .hero{
-  transform: translateY(100px);
-  width: 700px;
+  transform: translateY(30px);
+  width: 750px;
   margin:auto;
 
   .is-size-5{
@@ -69,5 +69,69 @@ body{
 .navigation{
   &:before, &:after{
     content: ' - ';
+  }
+}
+.start-page{
+    transform: translateY(130px);
+    height:500px;
+    width: 500px;
+    margin:auto auto;
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px 30px
+}
+.start-button{
+  transform: translateY(10px);
+  display: inline-block;
+  text-decoration: none;
+  padding:10px 30px;
+  border:1px solid $primary-color;
+  border-radius: 7px;
+  font-weight: bold;
+}
+.start-button:hover{
+  background-color: $primary-color;
+  color:white
+}
+
+//PAGINATION
+/* TWELVE */
+.pagination {
+  transform: translate(-10px,40px);
+  a{
+    text-decoration: none;
+    margin: 8px;
+  }
+  li{
+    list-style-type:none;
+    display: inline-block;
+    padding:13px 13px;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: $option-background;
+    color: $primary-color;
+    font-weight: bold;
+  }
+  .is-active{
+    transform: translateY(-10px);
+    color:black;
+    transition: transform 2s ;
+  }
+  li:hover{
+    color:black;
+    background-color: $option-background-hover;
+  }
+}
+
+            /* TIMER */
+.timer{
+  
+  p{
+    text-align: center;
+  }
+  h1{
+    display: inline-block;
+    font-size: 50px;
+    color: white;
   }
 }

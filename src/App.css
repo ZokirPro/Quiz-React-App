@@ -5,9 +5,9 @@ body {
 }
 
 .hero {
-  -webkit-transform: translateY(100px);
-          transform: translateY(100px);
-  width: 700px;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  width: 750px;
   margin: auto;
 }
 
@@ -49,7 +49,7 @@ body {
 }
 
 .option:hover {
-  background: #f7f7f7;
+  background: #f5f4f4;
 }
 
 .option:hover span {
@@ -77,5 +77,80 @@ body {
 
 .navigation:before, .navigation:after {
   content: ' - ';
+}
+
+.start-page {
+  -webkit-transform: translateY(130px);
+          transform: translateY(130px);
+  height: 500px;
+  width: 500px;
+  margin: auto auto;
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px 30px;
+}
+
+.start-button {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 30px;
+  border: 1px solid #00d1b2;
+  border-radius: 7px;
+  font-weight: bold;
+}
+
+.start-button:hover {
+  background-color: #00d1b2;
+  color: white;
+}
+
+/* TWELVE */
+.pagination {
+  -webkit-transform: translate(-10px, 40px);
+          transform: translate(-10px, 40px);
+}
+
+.pagination a {
+  text-decoration: none;
+  margin: 8px;
+}
+
+.pagination li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 13px 13px;
+  font-size: 20px;
+  border-radius: 50%;
+  background-color: white;
+  color: #00d1b2;
+  font-weight: bold;
+}
+
+.pagination .is-active {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  color: black;
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+}
+
+.pagination li:hover {
+  color: black;
+  background-color: #f5f4f4;
+}
+
+/* TIMER */
+.timer p {
+  text-align: center;
+}
+
+.timer h1 {
+  display: inline-block;
+  font-size: 50px;
+  color: white;
 }
 /*# sourceMappingURL=App.css.map */
